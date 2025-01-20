@@ -18,6 +18,15 @@
 .display-flex{
     display: flex;
 }
+.primary-color{
+    color: rgb(36, 36, 36);
+}
+.description{
+    color: rgb(51, 50, 50);
+font-size: 1.5vw;
+line-height: 25px;
+font-weight: 400;
+}
 
 /* navbar styles */
 .nav-container{
@@ -80,12 +89,58 @@ background: rgb(254, 163, 1);
 border: none;
 color: white;
 font-size: 1vw;
+cursor: pointer;
 }
 
 .hidden{
     visibility: hidden;
     position: absolute;
 }
+
+/* header section */
+.banner-container{
+    max-width: 1250px;
+    margin: 20px auto;
+    justify-content: space-between;
+    align-items: center
+}
+
+.text-container{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.header-title{
+    font-size: 3vw;
+    font-weight: 700;
+}
+.empowering{
+    color: rgb(254, 163, 1);
+}
+.vision{
+    color: rgb(1, 172, 253);
+}
+
+.banner-btn{
+    border-radius: 12px;
+    color: white;
+    width: 197px;
+    padding: 10px;
+background: rgb(17, 17, 17);
+border: none;
+cursor: pointer;
+}
+
+.banner-img{
+    width: 100%;
+}
+
+
+
+
+
+
 
 
 @media screen and (max-width: 576px) {
@@ -112,4 +167,30 @@ font-size: 1vw;
         border-bottom: 0.5px solid rgb(254, 163, 1);
         
     }
+    .banner-section{
+        padding-top: 100px;
+    }
+
+    .banner-container{
+        flex-direction: column-reverse;
+        
+    }
+    .text-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+        margin-top: 10px;
+        width: 500px;
+        margin: 0 auto;
+    }
+    .header-title{
+        font-size: 25px;
+    }
+    .banner-p{
+        font-size: 14px;
+    }
+
 }
