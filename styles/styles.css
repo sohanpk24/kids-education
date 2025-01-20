@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.roboto{
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* shared style */
+.display-flex{
+    display: flex;
+}
+
+/* navbar styles */
+.nav-container{
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1250px;
+    margin: 20px auto;
+}
+
+.nav-link-container{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-icon{
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nav-title{
+    font-size: 3.25vw;
+    color: rgb(36, 36, 36);
+    margin-left: 15px;
+}
+
+.nav-item{
+    list-style: none;
+    /* margin-right: 4vw; */
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 1.50vw;
+}
+
+.nav-1{
+    color: rgb(254, 163, 1);
+}
+.nav-2{
+    color: rgb(1, 172, 253);
+}
+.nav-3{
+    color: rgb(5, 212, 223);
+}
+.nav-4{
+    color: rgb(93, 88, 239);
+}
+
+.nav-btn{
+width: 197px;
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 6px;
+border-radius: 15px;
+background: rgb(254, 163, 1);
+border: none;
+color: white;
+font-size: 1vw;
+}
+
+.hidden{
+    visibility: hidden;
+    position: absolute;
+}
+
+
+@media screen and (max-width: 576px) {
+    
+    .header-container{
+        position: relative;
+    }
+    .nav-container{
+        position: absolute;
+        display: none;
+    }
+    .hidden{
+        visibility: visible;
+        position: absolute;
+        
+    }
+    .hidden-item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 20px auto;
+        padding: 15px;
+        border-bottom: 0.5px solid rgb(254, 163, 1);
+        
+    }
+}
