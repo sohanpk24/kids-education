@@ -90,6 +90,20 @@
   cursor: pointer;
 }
 
+
+
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    color: aqua;
+    font-size: 2rem;
+    animation: scroll 5s linear infinite; /* Corrected shorthand property */
+}
+
+
 .hidden {
   visibility: hidden;
   position: absolute;
@@ -240,6 +254,7 @@
   background: url("../assets/bg.png"),
     linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
   margin: 40px auto 0;
+  width: 100%;
 }
 .our-store-title {
   display: flex;
@@ -415,8 +430,9 @@
   align-items: center;
 }
 .footer-logo {
-  /* background: rgb(255, 255, 255); */
+  /* background-color: rgb(255, 255, 255); */
   color: rgb(255, 255, 255);
+  
 }
 .footer-title {
   font-size: 1.25rem;
@@ -457,6 +473,9 @@
   display: flex;
   gap: 10px;
 }
+
+
+
 
 @media screen and (max-width: 576px) {
   .header-container {
